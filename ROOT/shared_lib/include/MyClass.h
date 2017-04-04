@@ -4,27 +4,20 @@
 #if !defined (__CINT__) || defined (__MAKECINT__)
 #include "Rtypes.h"
 #endif
-#include <iostream>
-#include "TFile.h"
-#include "TString.h"
 
 class MyClass : public TObject {
 private:
 	TFile *fFile;
-	void internalMethod(){
-		std::cout << "calling an internal method" << std::endl;
-	}
+	void internalMethod();
 	
 public:
-	MyClass(TString *fname){
-		fFile = TFile::Open(*fname,"RECREATE");
-	};
-	~MyClass(){
-		fFile->Write();
-		fFile->Close();
-		delete fFile;
-	}
+	/// Default constructor
+	MyClass();
+	MyClass(TString *fname);
+	/// Virtual destructor
+	virtual ~MyClass();
 	void run();
+	
 	ClassDef(MyClass, 1)
 };
 
