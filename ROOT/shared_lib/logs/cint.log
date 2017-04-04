@@ -1,0 +1,22 @@
+dampeuser@dampebox-ubuntu:~/zimmer/git/sandbox/ROOT/shared_lib$ root -b
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/34    2 October 2015   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/34 (v5-34-34@v5-34-34, Oct 02 2015, 16:30:37 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+root [0] gSystem->Load("lib/libAnalysis")
+(int)0
+root [1] TString *inputFile = new TString("EleNtup_v540_r5202_all_square.root")
+root [2] MyClass *m = new MyClass(inputFile)
+/opt/exp_software/root/root-5.34.34p2/bin/root.exe: symbol lookup error: /media/sf_zimmer/git/sandbox/ROOT/shared_lib/./lib/libAnalysis.so: undefined symbol: _ZN5TFile4OpenEPKcS1_S1_ii

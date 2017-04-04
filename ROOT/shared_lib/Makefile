@@ -69,7 +69,7 @@ else
 endif
 
 ROOTDYNAMICLIBS := $(shell root-config --glibs)
-ROOTDYNAMICLIBS += -lMinuit -lRooFit
+#ROOTDYNAMICLIBS += -lMinuit -lRooFit
 
 EXTRALIBS= -ldl -lTreePlayer -lProof -lProofPlayer
 ifndef ONMACOSX
