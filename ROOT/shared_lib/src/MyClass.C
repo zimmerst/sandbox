@@ -1,5 +1,9 @@
 #include "MyClass.h"
 
+#include <iostream>
+#include "TFile.h"
+#include "TString.h"
+
 ClassImp(MyClass);
 
 void MyClass::internalMethod(){
