@@ -13,7 +13,7 @@ void MyClass::internalMethod(){
 public:
 
 MyClass::MyClass(TString *fname){
-	fFile = TFile::Open(*fname,"RECREATE");
+	fFile = new TFile(*fname,"RECREATE");
 }
 
 MyClass::~MyClass(){
