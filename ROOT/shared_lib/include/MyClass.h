@@ -5,6 +5,8 @@
 #include "Rtypes.h"
 #endif
 
+#include "TFile.h"
+
 class MyClass : public TObject {
 private:
 	TFile *fFile;
