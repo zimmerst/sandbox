@@ -1,2 +1,2 @@
-./lib/*
-./obj/*
+./ROOT/*/lib/*
+./ROOT/*/obj/*
