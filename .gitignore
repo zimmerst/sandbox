@@ -1,2 +1,6 @@
-./ROOT/*/lib/*
-./ROOT/*/obj/*
+ROOT/shared_lib/**/*.pcm
+ROOT/shared_lib/**/*.so
+ROOT/shared_lib/**/*.d
+
+
+*.so
