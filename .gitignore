@@ -1,6 +1,6 @@
-ROOT/shared_lib/**/*.pcm
-ROOT/shared_lib/**/*.so
-ROOT/shared_lib/**/*.d
+ROOT/shared_lib/obj/*
+ROOT/shared_lib/lib/*
+*~
+ROOT/shared_lib/src/*~
+ROOT/shared_lib/include/*~
 
-
-*.so
